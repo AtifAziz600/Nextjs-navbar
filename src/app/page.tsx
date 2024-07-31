@@ -10,6 +10,9 @@ import maker from "@/assets/imgae/client-maker.svg";
 
 import hremoImagedesktop from "@/assets/imgae/image-hero-desktop.png";
 import hremoImageMobile from "@/assets/imgae/image-hero-mobile.png";
+import Card from "./Card/page";
+import Benefit from "./Benifactor/page";
+import NewProduct from "./component/NewProduct";
 
 
 export default function Home() {
@@ -21,16 +24,12 @@ export default function Home() {
       <section className="mx-auto flex max-w-6xl flex-col-reverse gap-2 px-4 pb-12 transition-all md:flex-row md:gap-4">
         {/* left div */}
         <div className="flex flex-col items-center gap-6 pt-8 text-center md:w-1/2 md:items-start md:gap-10 md:pt-32 md:text-left">
-          <Balancer>
-            <h1 className="text-4xl font-semibold md:text-6xl">
-              Make remote work
-            </h1>
+          <Balancer className="text-4xl font-semibold md:text-6xl">
+            Make remote work
           </Balancer>
-          <Balancer>
-            <p className="text-neutral-400 md:max-w-[400px]">
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </p>
+          <Balancer className="text-neutral-400 md:max-w-[400px]">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
           </Balancer>
           <button className="border-black w-fit rounded-xl border-2 bg-black px-4 py-2 text-white transition-all hover:border-black hover:bg-black hover:bg-transparent hover:text-black/90">
             Learn more
@@ -61,6 +60,17 @@ export default function Home() {
           />
         </section>
       </section>
+      <div className="flex justify-center items-center">
+        <Card />
+      </div>
+      <div className="flex justify-center items-center">
+        <div className="hidden lg:block">
+          <Benefit />
+        </div>
+      </div>
+      <div className="">
+        <NewProduct />
+      </div>
     </div>
   );
 }

@@ -87,36 +87,38 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="mx-auto flex w-full max-w-7xl justify-between px-4 py-5 text-sm  text-black">
+    <div className="mx-auto flex w-full max-w-7xl justify-between px-4 py-5 text-sm text-black">
       {/* LEFT SIDE */}
       <section ref={animationParent} className="flex items-center gap-10">
         {/* LOGO */}
         <FiMenu
           onClick={openSideMenu}
-          className="cursor-pointer text-4xl md:hidden"
+          className="cursor-pointer text-4xl block md:hidden"
         />
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
-        <Image src={logo} alt="logo" />
-        <button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90 hidden md:block">
+        <Image src={logo} alt="logo" className="hidden md:block" />
+        <button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90 hidden sm:block md:block">
           Select your delivery location
         </button>
       </section>
 
       {/* CENTER SIDE */}
-      <section className="flex items-center flex-1 mx-4">
-        <input
-          type="text"
-          placeholder="Search your products"
-          className="flex-1 px-4 py-2 rounded-md text-black"
-        />
-        <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
-          <FiSearch className="text-2xl text-black " />
-        </button>
+      <section className="relative flex items-center flex-1 mx-4">
+        <div className="flex-1">
+          <input
+            type="text"
+            placeholder="Search your products"
+            className="w-full px-10 py-2 rounded-md text-black placeholder-gray-500"
+          />
+          <button className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400 transition-all hover:text-black/90">
+            <FiSearch className="text-xl" />
+          </button>
+        </div>
       </section>
 
       {/* RIGHT SIDE */}
       <section className="flex items-center gap-4">
-        <button className="h-fit text-neutral-400 transition-all hover:text-black/90 hidden md:block">
+        <button className="h-fit text-neutral-400 transition-all hover:text-black/90 hidden sm:block md:block">
           Download App Now
         </button>
         <button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90 hidden md:block">
@@ -207,7 +209,6 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
             onClick={closeSideMenu}
             className="cursor-pointer text-4xl"
           />
-          
         </section>
         <div className="flex flex-col text-base gap-2 transition-all">
           {navItems.map((data, index) => (

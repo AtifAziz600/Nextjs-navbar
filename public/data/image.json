@@ -1,0 +1,32 @@
+[
+  {
+    "src": "../../src/assets/Brown-eggs.png",
+    "alt": "Egg",
+    "title": "Egg"
+  },
+  {
+    "src": "../../src/assets/tea.png",
+    "alt": "Tea",
+    "title": "Tea"
+  },
+  {
+    "src": "../../src/assets/soft_drinks.jpg",
+    "alt": "Soft Drinks",
+    "title": "Soft Drinks"
+  },
+  {
+    "src": "../../src/assets/coffee.png",
+    "alt": "Coffee",
+    "title": "Coffee"
+  },
+  {
+    "src": "../../src/assets/frozen_food.png",
+    "alt": "Frozen Food",
+    "title": "Frozen Food"
+  },
+  {
+    "src": "../../src/assets/ice_cream.jpg",
+    "alt": "Ice Cream",
+    "title": "Ice Cream"
+  }
+]

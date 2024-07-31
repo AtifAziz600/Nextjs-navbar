@@ -1,0 +1,46 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+  padding: 10px;
+  gap: 20px;
+}
+
+.imageContainer {
+  display: inline-block;
+  position: relative;
+  flex: none;
+  text-align: center;
+}
+
+.prevBtn,
+.nextBtn {
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prevBtn {
+  left: 0;
+}
+
+.nextBtn {
+  right: 0;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
