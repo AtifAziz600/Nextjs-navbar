@@ -1,4 +1,4 @@
-// Your main page or layout component
+"use client"
 import BenefitCard from "./BenefitCard";
 
 const Benefit = () => {

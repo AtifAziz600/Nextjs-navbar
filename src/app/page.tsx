@@ -13,6 +13,8 @@ import hremoImageMobile from "@/assets/imgae/image-hero-mobile.png";
 import Card from "./Card/page";
 import Benefit from "./Benifactor/page";
 import NewProduct from "./component/NewProduct";
+import Footer from "./Footer/page";
+import Banner from "./Banner/page";
 
 
 export default function Home() {
@@ -68,9 +70,10 @@ export default function Home() {
           <Benefit />
         </div>
       </div>
-      <div className="">
+      <div className="flex justify-center items-center mb-12">
         <NewProduct />
       </div>
+      <Footer/>
     </div>
   );
 }

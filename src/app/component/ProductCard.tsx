@@ -80,11 +80,14 @@ const ProductCard: React.FC<propsType> = ({
         <h2 className="text-gray-900 font-medium uppercase">{title}</h2>
         <p className="text-gray-500 max-w-[150px">{desc}</p>
         <div>{generateRating(rating)}</div>
-        <div className="font-bold flex gap-4">{price} TK
-          <del className='text-gray-500 font-normal'>TK{parseInt(price) + 50}</del>
+        <div className="font-bold flex gap-4">
+          {price} TK
+          <del className="text-gray-500 font-normal">
+            TK{parseInt(price) + 50}
+          </del>
         </div>
-        <div className=''>
-          <button className=''></button>
+        <div className="mt-5 flex items-center justify-center">
+          <button className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Add to Cart</button>
         </div>
       </div>
     </div>

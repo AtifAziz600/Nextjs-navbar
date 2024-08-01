@@ -57,33 +57,36 @@ export default function Card() {
     },
     {
       src: Noodles,
-      alt: "Noodles and Macaroni",
-      title: "Noodles and Macaroni",
+      alt: "Noodles",
+      title: "Noodles",
     },
   ];
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center overflow-hidden">
       <button
-        className="absolute left-2 md:left-48 z-10 p-2 bg-white rounded-full shadow-md"
+        className="absolute left-2 z-0 p-2 bg-white rounded-full shadow-md"
         onClick={handlePrev}
       >
         {"<"}
       </button>
       <div
-        className="flex overflow-x-auto md:overflow-hidden gap-4 p-4 scroll-smooth mx-10 md:mx-16"
+        className="flex overflow-x-auto overflow-hidden gap-4 p-4 scroll-smooth hide-scrollbar"
         ref={scrollContainerRef}
       >
         {images.map((image, index) => (
-          <div key={index} className="flex-none relative text-center">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={200}
-              height={200}
-              className="w-fit h-fit sm:w-24 sm:h-24 md:w-48 md:h-48 object-cover rounded-lg hover:scale-105 duration-200"
-            />
-            <div className="text-sm md:text-lg font-semibold">
+          <div
+            key={index}
+            className="flex-none text-center w-40 sm:w-48 md:w-56 lg:w-64"
+          >
+            <div className="w-full h-40 sm:h-48 md:h-56 lg:h-64">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="text-sm md:text-lg font-semibold mt-2">
               <button className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                 {image.title}
               </button>
@@ -92,7 +95,7 @@ export default function Card() {
         ))}
       </div>
       <button
-        className="absolute right-2 md:right-48 p-2 z-10 bg-white rounded-full shadow-md"
+        className="absolute right-2 z-0 p-2 bg-white rounded-full shadow-md"
         onClick={handleNext}
       >
         {">"}

@@ -103,16 +103,14 @@ export default function Navbar() {
       </section>
 
       {/* CENTER SIDE */}
-      <section className="relative flex items-center flex-1 mx-4">
+      <section className="flex items-center flex-1 mx-4">
         <div className="flex-1">
           <input
             type="text"
             placeholder="Search your products"
             className="w-full px-10 py-2 rounded-md text-black placeholder-gray-500"
           />
-          <button className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400 transition-all hover:text-black/90">
-            <FiSearch className="text-xl" />
-          </button>
+          
         </div>
       </section>
 

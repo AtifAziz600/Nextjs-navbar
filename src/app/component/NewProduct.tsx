@@ -12,57 +12,56 @@ import Noodles from "../../../public/data/noodle.jpg";
 
 export default function NewProduct() {
     const data = [
-        {
-            img: Egg,
-            title: "Tea",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 3,
-            price: "38.00 TK"
-        },
-                {
-            img: Tea,
-            title: "Egg",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 4,
-            price: "38.00 TK"
-        },
-                {
-            img: Soft,
-            title: "Coffee",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 5,
-            price: "38.00 TK"
-        },
-                {
-            img: FrozenFood,
-            title: "Frozen Food",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 4,
-            price: "38.00 TK"
-        },
-                {
-            img: IceCream,
-            title: "Ice Cream",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 3,
-            price: "38.00 TK"
-        },
-                {
-            img: Coffee,
-            title: "Soft Drinks",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 4,
-            price: "38.00 TK"
-        },
-                {
-            img: Noodles,
-            title: "Noodles",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
-            rating: 3,
-            price: "38.00 TK"
-        },
-        
-    ]
+      {
+        img: Egg,
+        title: "Tea",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 3,
+        price: "38.00 TK",
+      },
+      {
+        img: Tea,
+        title: "Egg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 4,
+        price: "38.00 TK",
+      },
+      {
+        img: Coffee,
+        title: "Coffee",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 5,
+        price: "38.00 TK",
+      },
+      {
+        img: FrozenFood,
+        title: "Frozen Food",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 4,
+        price: "38.00 TK",
+      },
+      {
+        img: IceCream,
+        title: "Ice Cream",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 3,
+        price: "38.00 TK",
+      },
+      {
+        img: Soft,
+        title: "Soft Drinks",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 4,
+        price: "38.00 TK",
+      },
+      {
+        img: Noodles,
+        title: "Noodles",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus quibusdam assumenda fugiat ullam, ducimus expedita odit commodi officiis odio molestias possimus aut aperiam maxime laborum quas, velit beatae qui?",
+        rating: 3,
+        price: "38.00 TK",
+      },
+    ];
     return (
       <div>
         <div className="container pt-16">
