@@ -71,7 +71,7 @@ export default function NewProduct() {
             {data.map((item, index) => (
               <ProductCard
                 key={index}
-                img={item.img}
+                img={item.img.src}
                 title={item.title}
                 desc={item.desc}
                 rating={item.rating}

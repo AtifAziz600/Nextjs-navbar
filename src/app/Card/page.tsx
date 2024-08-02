@@ -10,7 +10,7 @@ import IceCream from "../../../public/data/ice_cream.jpg";
 import Noodles from "../../../public/data/noodle.jpg";
 
 export default function Card() {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const handleNext = () => {
     if (scrollContainerRef.current) {
@@ -77,7 +77,7 @@ export default function Card() {
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex-none text-center w-40 sm:w-48 md:w-56 lg:w-64"
+            className="flex-none text-center w-40 sm:w-24 md:w-56 lg:w-56"
           >
             <div className="w-full h-40 sm:h-48 md:h-56 lg:h-64">
               <Image

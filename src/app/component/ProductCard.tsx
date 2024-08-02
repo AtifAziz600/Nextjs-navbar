@@ -1,8 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+interface PropsType {
+  img: string;
+  title: string;
+  desc: string;
+  rating: number;
+  price: string;
+}
 
-const ProductCard: React.FC<propsType> = ({
+const ProductCard: React.FC<PropsType> = ({
      img,
      title,
      desc,

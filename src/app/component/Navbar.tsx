@@ -233,7 +233,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   );
 }
 
-function SingleNavItems(data: NavItem) {
+function SingleNavItems(data:any) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -258,7 +258,7 @@ function SingleNavItems(data: NavItem) {
       {/*dropdown */}
       {isItemOpen && data.children && (
         <div className="w-auto flex-col gap-1 rounded-lg bg-white py-3 transition-all flex ">
-          {data.children.map((ch, i) => (
+          {data.children.map((ch:any, i:any) => (
             <Link
               key={i}
               href={ch.link ?? "#"}
